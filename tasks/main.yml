@@ -1,0 +1,9 @@
+---
+- name: Capistrano | Create shared directory
+  file: path={{ app_path }}/shared/ state=directory force=no
+
+- name: Capistrano | Create current directory
+  file: path={{ app_path }}/current/ state=directory force=no
+
+- name: Capistrano | Create config directory
+  file: path={{ app_path }}/shared/config/ state=directory force=no
