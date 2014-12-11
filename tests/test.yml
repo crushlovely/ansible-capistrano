@@ -1,5 +1,7 @@
 ---
 - hosts: localhost
   remote_user: root
+  vars:
+    app_path: /srv/app
   roles:
     - ansible-deploy-user
