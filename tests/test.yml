@@ -4,5 +4,5 @@
   vars:
     app_path: /srv/app
   roles:
-    - crushlovely.deploy-user
-    - ansible-capistrano
+    - {role: crushlovely.deploy-user}
+    - {role: ansible-capistrano}
