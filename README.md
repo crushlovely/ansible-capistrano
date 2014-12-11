@@ -13,16 +13,15 @@ $ ansible-galaxy install crushlovely.capistrano
 
 ## Variables
 
-`` yaml
+``` yaml
 app_path: application path
-``
+```
 
 ## Usage
 
 Once this role is installed on your system, include it in the roles list of your playbook.
 
 ``` yaml
----
 - hosts: localhost
   roles:
     - { role: crushlovely.capistrano }
