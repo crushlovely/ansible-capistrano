@@ -5,5 +5,5 @@
 }
 
 @test "Check that tmp is owned by the right user" {
-    ls -l /srv | grep tmp | awk '{print $3 $4}' | grep -q "$EXPECTED_TMP_OWNER$EXPECTED_TMP_OWNER"
+    ls -l /srv | grep tmp | awk '{print $3 $4}' | grep -q "$EXPECTED_DIR_OWNER$EXPECTED_DIR_OWNER"
 }
