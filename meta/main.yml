@@ -2,9 +2,9 @@
 galaxy_info:
   author: Pablo Castillo
   company: Crush & Lovely
-  description: Creates a deploy user for Ubuntu 12.04LTS or greater
+  description: Creates a working directory for a capistrano type deployment
   license: MIT
-  min_ansible_version: 1.2
+  min_ansible_version: 1.6
   platforms:
     - name: Ubuntu
       versions:
