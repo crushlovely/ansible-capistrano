@@ -4,7 +4,6 @@
   sudo: True
   vars:
     app_path: /srv/app
-  dependencies:
-    - {role: crushlovely.deploy-user}
   roles:
+    - {role: crushlovely.deploy-user, tags: user}
     - {role: ansible-capistrano}
