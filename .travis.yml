@@ -13,12 +13,12 @@ before_install:
  - sudo apt-get install -qq bats
 install:
   # Install Ansible.
-  - pip install ansible==1.6.6
+  - pip install --root $TRAVIS_BUILD_DIR ansible==1.6.6
   # Add ansible.cfg to pick up roles path.
 
   # - printf "[defaults]\nroles_path = ../" > $TRAVIS_BUILD_DIR/../ansible.cfg
   # Install user role to complete
-  - sudo ansible-galaxy install crushlovely.deploy-user
+  - ansible-galaxy install -p $TRAVIS_BUILD_DIR/roles crushlovely.deploy-user
 script:
   # Check the role/playbook's syntax.
   - ansible-playbook --syntax-check -i tests/inventory tests/test.yml
