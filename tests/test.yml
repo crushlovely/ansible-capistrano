@@ -1,9 +1,7 @@
 ---
-- hosts: localhost
-  remote_user: root
-  sudo: True
-  vars:
-    app_path: /srv/app
+- hosts: 127.0.0.1
+  connection: local
+  remote_user: ubuntu
+  gather_facts: false
   roles:
-    - {role: crushlovely.deploy-user, tags: user}
-    - {role: ansible-capistrano}
+    - ansible-capistrano

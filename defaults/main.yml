@@ -1,0 +1,5 @@
+---
+app_path: /home/ubuntu/test
+app:
+  user: ubuntu
+  group: ubuntu
