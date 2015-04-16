@@ -1,12 +1,12 @@
 ---
 - name: Capistrano | Create shared directory
-  file: path={{ app_path }}/shared/ state=directory owner=deploy group=deploy force=no
+  file: path={{ app_path }}/shared/ state=directory owner={{ app.user }} group={{ app.group }} force=no
   sudo: yes
 
 - name: Capistrano | Create current directory
-  file: path={{ app_path }}/current/ state=directory owner=deploy group=deploy force=no
+  file: path={{ app_path }}/current/ state=directory owner={{ app.user }} group={{ app.group }} force=no
   sudo: yes
 
 - name: Capistrano | Create config directory
-  file: path={{ app_path }}/shared/config/ state=directory owner=deploy group=deploy force=no
+  file: path={{ app_path }}/shared/config/ state=directory owner={{ app.user }} group={{ app.group }} force=no
   sudo: yes
