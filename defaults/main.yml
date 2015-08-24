@@ -1,5 +1,4 @@
 ---
 app_path: /home/ubuntu/test
-app:
-  user: ubuntu
-  group: ubuntu
+app_user: ubuntu
+app_group: ubuntu
