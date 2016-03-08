@@ -6,11 +6,13 @@ galaxy_info:
   license: MIT
   min_ansible_version: 1.6
   platforms:
-    - name: Ubuntu
-      versions:
-        - Precise
-        - Trusty
-  categories:
+  - name: Ubuntu
+    versions:
+    - Precise
+    - Trusty
+  galaxy_tags:
     - system
+    - application
+    - deployment
 dependencies: []
-version: 2.0.0
+version: 3.0.1
