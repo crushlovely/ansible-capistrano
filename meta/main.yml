@@ -8,8 +8,7 @@ galaxy_info:
   platforms:
   - name: Ubuntu
     versions:
-    - Precise
-    - Trusty
+    - all
   galaxy_tags:
     - system
     - application
